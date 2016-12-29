@@ -8,4 +8,4 @@
 
 2、运行Application类
 
-3、待项目启动后在浏览器中输入<a target="_blank" href="http://localhost:8080/weather/北京">http://localhost:8080/weather/北京<a> 即可访问
+3、待项目启动后在浏览器中输入<a href="http://localhost:8080/weather/北京">http://localhost:8080/weather/北京<a> 即可访问
