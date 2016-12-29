@@ -1,5 +1,5 @@
 # test-pjax
-#基于springboot,freemaker实现pjax(pushState + ajax)例子
+#java实现pjax(pushState + ajax)例子,基于springboot,freemaker
 
 
 使用步骤：
