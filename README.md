@@ -1,4 +1,4 @@
-# test-pjax
+# java-pjax
 <h3>java实现pjax(pushState + ajax)例子,基于springboot,freemaker</h3>
 
 
