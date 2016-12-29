@@ -1,40 +1,28 @@
 <html>
 	<head>
-		<title>test</title>
-		<style type="text/css">
-			.container {
-				width: 800px;
-				height: 300px;
-				border: 1px solid #777777;
-				margin: auto;
-				margin-top: 10px;
-			}
-		</style>
-		<link rel='stylesheet' href='/lib/nprogress/nprogress.css'/>
-		<script src='/lib/nprogress/nprogress.js'></script>
+		<title>${city!''}天气</title>
+		<link rel='stylesheet' href='/css/weather.css'/>
+		<link rel='stylesheet' href='/js/nprogress/nprogress.css'/>
+		<script src='/js/nprogress/nprogress.js'></script>
 	</head>
 	<body>
-		<div>
-			<div class="select">
-				<div class="normal-select">
-					<span>
-						地域：
-					</span>
-					<ul>
-						<li><a href="/index/北京">北京</a></li>
-						<li><a href="/index/天津">天津</a></li>
-						<li><a href="/index/上海">上海</a></li>
-						<li><a href="/index/重庆">重庆</a></li>
-					</ul>
-				</div>
-			</div>
+		<header>
+			<span><a href="/weather/北京">北京</a></span>
+			<span><a href="/weather/天津">天津</a></span>
+			<span><a href="/weather/上海">上海</a></span>
+			<span><a href="/weather/重庆">重庆</a></span>
+		</header>
+		<section>
 			<div class="container" id="container">
-				${area!''}
+				${weather!''}
 			</div>
-		</div>
+		</section>
+		<footer class="footer">
+			<h3>数据由 wthrcdn.etouch.cn 提供</h3>
+		</footer>
 	</body>
-	<script type="text/javascript" src="/lib/jquery/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/lib/jquery/jquery.pjax.js"></script>
+	<script type="text/javascript" src="/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/js/jquery/jquery.pjax.js"></script>
 	<script type="text/javascript">
 		$.pjax({
 			selector: 'a',
@@ -43,6 +31,7 @@
 			cache: false,
 			storage: false,
 			timeout : 0,
+			titleSuffix: '天气',
 			filter: function(){},
 			callback: function(status){
 				var type = status.type;
