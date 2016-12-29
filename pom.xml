@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ywzlp</groupId>
-	<artifactId>test-pjax</artifactId>
+	<artifactId>java-pjax</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>test-pjax</name>
+	<name>java-pjax</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -48,7 +48,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>test-pjax</finalName>
+		<finalName>java-pjax</finalName>
 		<resources>
 			<resource>
 				<directory>${basedir}/src/main/webapp</directory>
