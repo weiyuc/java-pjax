@@ -1,5 +1,4 @@
-<!DOCTYPE html> 
-<html lang="en">
+<html>
 	<head>
 		<title>${city!''}天气</title>
 		<link rel='stylesheet' href='/css/weather.css'/>
