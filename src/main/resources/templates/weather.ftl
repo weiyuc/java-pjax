@@ -31,17 +31,7 @@
 			cache: false,
 			storage: false,
 			timeout : 0,
-			titleSuffix: '天气',
-			filter: function(){},
-			callback: function(status){
-				var type = status.type;
-	            switch(type){
-	                case 'success':;break; //正常
-	                case 'cache':;break; //读取缓存 
-	                case 'error': ;break; //发生异常
-	                case 'hash': ;break; //只是hash变化
-	            }
-			}
+			titleSuffix: '天气'
     	});
     	NProgress.configure({ showSpinner: false });
 		$('#container').bind('pjax.start', function(){
